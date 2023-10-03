@@ -13,7 +13,7 @@ module tt_um_calculator (
 );
 
     calculator_chip calc(
-        .NumOut(uo_out), .NumIn(ui_in), .OpIn({ 1'b1, uio_in[6:0] }), .Enter(uio_in[7]),
+        .NumOut(uo_out), .NumIn(ui_in), .OpIn(uio_in[1:0]), .Enter(uio_in[7]),
         .Reset(rst_n),
         .clock(clk));
 
