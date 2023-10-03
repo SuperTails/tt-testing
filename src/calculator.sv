@@ -17,6 +17,8 @@ module tt_um_calculator (
         .Reset(rst_n),
         .clock(clk));
 
+    assign uio_out = 8'b0000_0000;
+
     assign uio_oe = 8'b0000_0000;
 
 endmodule : tt_um_calculator
